@@ -12,7 +12,7 @@ janela.configure(background= "#1d1d1d")
 
 def get_saudacao():
     nome_usuario = os.getlogin()
-    saudacao.config(text="Olá, " + nome_usuario)
+    saudacao.config(text="Olá, " + nome_usuario.capitalize())
 def get_data():
     data_atual = strftime("%a, %d %b %Y")
     data.config(text =data_atual)
